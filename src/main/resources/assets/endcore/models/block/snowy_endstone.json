@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "minecraft:block/end_stone",
+    "particle": "minecraft:block/end_stone",
+    "side": "endcore:block/snowy_end_stone_side",
+    "top": "endcore:block/end_snow"
+  }
+}

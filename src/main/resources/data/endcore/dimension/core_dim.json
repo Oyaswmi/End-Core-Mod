@@ -1,0 +1,11 @@
+{
+  "type": "endcore:core_dim_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "endcore:core_barrens_noise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "endcore:core_barrens"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.oyaswmi.endcore.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "CoreDimFreezeMix"
+  ],
+  "client": [
+
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

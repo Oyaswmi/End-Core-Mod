@@ -1,0 +1,28 @@
+{
+  "block.endcore.end_snow_layer": "Core Snow",
+  "block.endcore.end_snow_block": "Core Snow Block",
+  "block.endcore.snowy_endstone": "Snowy End Stone",
+  "item.endcore.empty_snowcone": "Empty Snow Cone",
+  "item.endcore.white_snowcone": "White Snow Cone",
+  "item.endcore.light_gray_snowcone": "Light Gray Snow Cone",
+  "item.endcore.gray_snowcone": "Gray Snow Cone",
+  "item.endcore.black_snowcone": "Black Snow Cone",
+  "item.endcore.brown_snowcone": "Brown Snow Cone",
+  "item.endcore.red_snowcone": "Red Snow Cone",
+  "item.endcore.orange_snowcone": "Orange Snow Cone",
+  "item.endcore.yellow_snowcone": "Yellow Snow Cone",
+  "item.endcore.lime_snowcone": "Lime Snow Cone",
+  "item.endcore.green_snowcone": "Green Snow Cone",
+  "item.endcore.cyan_snowcone": "Cyan Snow Cone",
+  "item.endcore.light_blue_snowcone": "Light Blue Snow Cone",
+  "item.endcore.blue_snowcone": "Blue Snow Cone",
+  "item.endcore.purple_snowcone": "Purple Snow Cone",
+  "item.endcore.magenta_snowcone": "Magenta Snow Cone",
+  "item.endcore.pink_snowcone": "Pink Snow Cone",
+  "item.endcore.end_snowball": "Core Snowball",
+  "item.endcore.sharpness_rune": "Sharpness Rune",
+  "item.endcore.protection_rune": "Protection Rune",
+  "enchantment.endcore.frost_protection": "Frost Protection",
+
+  "itemGroup.endcore.general": "End's Core"
+}

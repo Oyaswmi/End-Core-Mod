@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "endcore:end_snow_block",
+    "endcore:end_snow_layer"
+  ]
+}
+
