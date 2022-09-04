@@ -12,10 +12,13 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 
 
-
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-
+import net.minecraft.tag.BiomeTags;
+import net.minecraft.tag.TagEntry;
+import net.minecraft.tag.TagKey;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,9 +29,13 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+import javax.swing.text.html.Option;
 
+import java.util.OptionalLong;
+
+import static com.oyaswmi.endcore.CoreBiomeTags.IS_FREEZING;
 import static com.oyaswmi.endcore.enchantments.CoreEnchants.FROST_PROTECTION;
-
+import static com.oyaswmi.endcore.world.dimension.CoreDim.CORE_DIMENSION_KEY;
 
 
 @Mixin(PlayerEntity.class)

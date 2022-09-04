@@ -2,6 +2,7 @@
   "type": "endcore:core_dim_type",
   "generator": {
     "type": "minecraft:noise",
+    "seed": 839970386,
     "settings": "endcore:core_barrens_noise",
     "biome_source": {
       "type": "minecraft:fixed",

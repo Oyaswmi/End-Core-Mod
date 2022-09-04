@@ -21,6 +21,9 @@ public class EndSnowBlock extends Block {
     public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
         if (world.getBlockState(pos.down(1)).isOf(END_STONE)) {
             world.setBlockState(pos.down(1), SNOWY_ENDSTONE.getDefaultState());
+        }else if (world.getBlockState(pos.down(1)).isAir()) {
+            world.breakBlock(pos, true);
+
         }
 
     }

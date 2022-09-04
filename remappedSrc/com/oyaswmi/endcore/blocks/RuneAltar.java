@@ -12,10 +12,11 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import org.betterx.bclib.blocks.BaseBlock;
+import org.betterx.bclib.blocks.BaseBlockWithEntity;
 
 
-
-public class RuneAltar extends Block implements BlockEntityProvider {
+public class RuneAltar extends BaseBlock implements BlockEntityProvider {
 
     public RuneAltar(Settings settings) {
         super(settings);

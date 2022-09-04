@@ -1,7 +1,10 @@
 package com.oyaswmi.endcore.blocks;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Material;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.pathing.NavigationType;
@@ -136,15 +139,14 @@ public class EndSnowLayer extends Block {
     @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
         BlockState blockState = world.getBlockState(pos.down());
-        if (blockState.isOf(Blocks.ICE) || blockState.isOf(Blocks.PACKED_ICE) || blockState.isOf(Blocks.BARRIER)) {
+        if (blockState.isIn(BlockTags.SNOW_LAYER_CANNOT_SURVIVE_ON)) {
             return false;
         }
-        if (blockState.isOf(Blocks.HONEY_BLOCK) || blockState.isOf(Blocks.SOUL_SAND)) {
+        if (blockState.isIn(BlockTags.SNOW_LAYER_CAN_SURVIVE_ON)) {
             return true;
         }
         return Block.isFaceFullSquare(blockState.getCollisionShape(world, pos.down()), Direction.UP) || blockState.isOf(this) && blockState.get(LAYERS) == 8;
     }
-
 
     @Override
     public boolean canPathfindThrough(BlockState state, BlockView world, BlockPos pos, NavigationType type) {

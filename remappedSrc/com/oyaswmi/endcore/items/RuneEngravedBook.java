@@ -9,7 +9,6 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.nbt.NbtElement;
 import net.minecraft.nbt.NbtList;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
@@ -41,7 +40,7 @@ public class RuneEngravedBook extends Item {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-        tooltip.add(new TranslatableText("An Ancient Set of Runes.").formatted(Formatting.DARK_GRAY, Formatting.ITALIC));
-        tooltip.add(new TranslatableText("What Secrets Does It Hold?").formatted(Formatting.DARK_GRAY, Formatting.ITALIC));
+        tooltip.add(Text.translatable("An Ancient Set of Runes.").formatted(Formatting.DARK_GRAY, Formatting.ITALIC));
+        tooltip.add(Text.translatable("What Secrets Does It Hold?").formatted(Formatting.DARK_GRAY, Formatting.ITALIC));
     }
 }
