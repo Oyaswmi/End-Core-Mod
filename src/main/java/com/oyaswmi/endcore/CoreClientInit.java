@@ -32,7 +32,7 @@ public class CoreClientInit implements ClientModInitializer {
                 new FlyingItemEntityRenderer(context));
         receiveEntityPacket();
         BlockRenderLayerMap.INSTANCE.putBlock(CoreBlocks.CARVED_RUNE, RenderLayer.getCutout());
-
+        BlockRenderLayerMap.INSTANCE.putBlock(CoreBlocks.AMETHYST_DUST, RenderLayer.getCutout());
     }
 
 

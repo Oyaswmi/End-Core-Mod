@@ -1,0 +1,6 @@
+{
+  "parent": "endcore:block/amethyst_dust_side_alt",
+  "textures": {
+    "line": "endcore:block/amethyst_dust_line1"
+  }
+}

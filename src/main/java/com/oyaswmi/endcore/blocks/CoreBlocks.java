@@ -1,14 +1,9 @@
 package com.oyaswmi.endcore.blocks;
 
-import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.block.entity.BlockEntityType;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -19,7 +14,7 @@ public class CoreBlocks {
 
 
     //Init Blocks
-    public static final AmethystDust AMETHYST_DUST = new AmethystDust(FabricBlockSettings.of(Material.AMETHYST).strength(9.0f).hardness(3.0f));
+    public static final AmethystDust AMETHYST_DUST = new AmethystDust(FabricBlockSettings.of(Material.AMETHYST).strength(0.0f).hardness(0.0f).nonOpaque().noCollision());
     public static final CarvedRune CARVED_RUNE = new CarvedRune(FabricBlockSettings.of(Material.STONE).strength(9.0f).hardness(3.0f));
     public static final RuneAltar RUNE_ALTAR = new RuneAltar(FabricBlockSettings.of(Material.STONE).strength(9.0f).hardness(3.0f));
     public static final SnowyEndstone SNOWY_ENDSTONE = new SnowyEndstone(FabricBlockSettings.of(Material.STONE).strength(9.0f).hardness(3.0f).requiresTool());
